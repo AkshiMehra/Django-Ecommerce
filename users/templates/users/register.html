@@ -1,0 +1,6 @@
+<form method="POST">
+  {% csrf_token %} {% for feilds in form %} {{feilds.name}} {{feilds}}
+  {%endfor%}
+
+  <button type="submit">Register</button>
+</form>
